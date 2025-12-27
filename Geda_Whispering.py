@@ -50,7 +50,7 @@ REFRAIN;
 END;
 '''
 
-MAX_LINES = 100
+MAX_LINES = 100  #this is max_lines
 
 def reader(song, startLabel, iinput, iprint):
     lip = 0
@@ -59,7 +59,7 @@ def reader(song, startLabel, iinput, iprint):
     refrain_return = 0
     finished = False
 
-    # Split the song into individual lines
+    # Split the song into individual lines i add some thing
     song_lines = song.splitlines()
 
     # Identify the start label, refrain marker, and RETURN line index
@@ -70,6 +70,17 @@ def reader(song, startLabel, iinput, iprint):
             refrain = i + 1
         elif song_lines[i] == 'RETURN':
             refrain_return = i
+
+
+
+
+
+
+
+
+
+
+
 
     line_count = 0
     lip = start
@@ -96,3 +107,21 @@ def reader(song, startLabel, iinput, iprint):
                 lip += 1
 
 reader(song_geda, '[VERSE1]')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
